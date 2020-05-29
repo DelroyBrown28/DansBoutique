@@ -8,6 +8,7 @@ html {
     flex-flow: column;
     background-color: #FFD9B8;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -15,6 +16,10 @@ html {
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 320px) {
+
+    body {
+        overflow: hidden;
+    }
 
 
     /*-----MAIN TITLE AND IMAGE-----*/
@@ -71,11 +76,9 @@ html {
         color: #fff;
         transition: 0.2s;
         background-color: rgba(255, 136, 100, 0.26);
+
         /*-----//  SERVICES LIST-----*/
         /*-----HAIR SERVICE SECTION-----*/
-
-
-
     }
 
     .hair_section {
@@ -83,21 +86,26 @@ html {
         height: 100%;
         width: 100%;
         background-color: #FF8764;
+        left: 100%;
         display: flex;
         flex-flow: column;
+
         display: none;
+        
     }
 
     .top_contents__hair_sect {
         width: 100%;
         height: 10%;
         display: flex;
+        justify-content: flex-end;
     }
 
     .back_button {
         width: 33px;
         height: 32px;
-        margin: 15px 0px 0px 15px;
+        transform: rotate(180deg);
+        margin: 15px 15px 0px 0px;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -122,7 +130,7 @@ html {
         margin: 0;
         margin-top: 15px;
         padding: 0;
-        
+
     }
 
     .hair_service__hair_sect {
