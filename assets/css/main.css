@@ -71,14 +71,76 @@ html {
         color: #fff;
         transition: 0.2s;
         background-color: rgba(255, 136, 100, 0.26);
+        /*-----//  SERVICES LIST-----*/
+        /*-----HAIR SERVICE SECTION-----*/
+
+
 
     }
 
-    /*-----//  SERVICES LIST-----*/
+    .hair_section {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #FF8764;
+        display: flex;
+        flex-flow: column;
+        display: none;
+    }
+
+    .top_contents__hair_sect {
+        width: 100%;
+        height: 10%;
+        display: flex;
+    }
+
+    .back_button {
+        width: 33px;
+        height: 32px;
+        margin: 15px 0px 0px 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .service_title {
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .appointment_text {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .hair_list {
+        list-style: none;
+        margin: 0;
+        margin-top: 15px;
+        padding: 0;
+        
+    }
+
+    .hair_service__hair_sect {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /*-----//  HAIR SERVICE SECTION-----*/
+
+
 }
 
 /*-----HOVERS AND SUCH-----*/
 
 .service:active {
     background-color: rgb(255, 136, 100);
+}
+
+.back_button:active {
+    transform: translate(15px);
 }
