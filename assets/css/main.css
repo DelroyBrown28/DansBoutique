@@ -6,53 +6,65 @@ html {
     padding: 0;
     display: flex;
     flex-flow: column;
-    background-color: #FEE4CD;
-
+    background-color: #FFD9B8;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.main_contents {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
 
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
     
+
+    .tap_service_text {
+        position: relative;
+        color: #FF8764;
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 40px;
+        
+    }
+
+    .title_img_wrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .title_txt_img {
+        height: 115px;
+        margin: 20px auto 0px;
+        
+    }
+
+    .hair_image {
+        width: 120px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .service_list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 1.2em;
+        background-color: #FFF5EE;
+    }
 }
 
-.color_change {
-    background-color: #FF8764;
-    transition: 1s;
-}
+/*-----HOVERS AND SUCH-----*/
 
-.hair_img {
-    position: absolute;
-    bottom: 42%;
-    height: 200px;
-
-    
-}
-
-.main_title {
-    position: absolute;
-    bottom: 17%;
+.service:active {
     opacity: 0.5;
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-    font-size: 3.3em;
-}
-
-.services_button {
-    position: absolute;
-    bottom: 10%;
-    font-size: 1.2em;
-    font-weight: 100;
-
-    background-color: transparent;
-    border: none;
-    border: 1px solid #FF8764;
-    width: 180px;
-    height: 40px;
-
 }
